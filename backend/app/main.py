@@ -18,7 +18,7 @@ app = FastAPI(
 # In production, restrict to the actual frontend origin(s) — not "*".
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["https://community-health-platform1.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
